@@ -20,6 +20,7 @@ int main()
 	{
 		cout << (char)ifs.get();
 	}
+	ifs.close();
 	//한 줄씩
 	/*string String;
 	while (getline(ifs, String))
@@ -33,31 +34,31 @@ int main()
 	SS << ifs.rdbuf();
 	cout << SS.str();*/
 
-	string Map[10] = {
-	"**********",
-	"*        *",
-	"*        *",
-	"*        *",
-	"*        *",
-	"*        *",
-	"*        *",
-	"*        *",
-	"*        *",
-	"**********"
-	};
+	//string Map[10] = {
+	//"**********",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"*        *",
+	//"**********"
+	//};
 
-	//파일 만들기.
-	ofstream Ofs;
-	Ofs.open("MyMap.txt");
+	////파일 만들기.
+	//ofstream Ofs;
+	//Ofs.open("MyMap.txt");
 
-	for (int i = 0; i < Map->length(); i++)
-	{
-		if (Ofs.is_open())
-		{
-			Ofs << Map[i] << endl;
-		}
-	}
-	Ofs.close();
+	//for (int i = 0; i < Map->length(); i++)
+	//{
+	//	if (Ofs.is_open())
+	//	{
+	//		Ofs << Map[i] << endl;
+	//	}
+	//}
+	//Ofs.close();
 
 
 	return 0;
